@@ -47,15 +47,8 @@ const Project: React.FC<projectProps> = ({ projectTitle, imgPath, projectDesc, m
     
     return (
         <div>
-            <Router>
-      <div>
-        <Link to="/another">Go to Another Component</Link>
-        <Routes>
-        <Route path="/another" Component={loadMarkdown} />
-        </Routes>
-      </div>
-    </Router>
-            <a href='' className={projLink} onClick={loadMarkdown}>
+            
+            <a href='' className={projLink}>
                 <div className={body}>
 
                     <img src={imgPath} alt={projectTitle} className={projImage} />
