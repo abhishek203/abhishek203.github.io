@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/layout';
 import Social from '../components/social';
-import ReactMarkdown from 'react-markdown';
+// import ReactMarkdown from 'react-markdown';
 import { BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 
 import { body } from '../styles/body.module.css';
@@ -37,7 +37,7 @@ const loadMarkdown:React.FC  =  () => {
             {markdownContent && (
                 <div>
                     <h2>Markdown Content:</h2>
-                    <ReactMarkdown>{markdownContent}</ReactMarkdown>
+                    {/* <ReactMarkdown>{markdownContent}</ReactMarkdown> */}
                 </div>
             )}
         </div>
