@@ -1,0 +1,21 @@
+.projImage {
+    margin: auto;
+    max-width: 500px;
+    justify-content: center;
+  }
+
+.projLink {
+    text-decoration: none;
+    text-align: none;
+}
+.projExplanation {
+    justify-content: left;
+    padding-bottom: 2rem;
+    color: black;
+
+}
+.projHeading {
+    color: black;
+    text-align: center;
+    justify-content: center;
+}

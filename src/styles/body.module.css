@@ -1,0 +1,7 @@
+.body {
+  margin: auto;
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  max-width: 500px;
+  text-align: left;
+  justify-content: left;
+}
