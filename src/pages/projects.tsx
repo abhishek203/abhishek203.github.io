@@ -2,7 +2,6 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import Social from '../components/social';
 // import ReactMarkdown from 'react-markdown';
-import { BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 
 import { body } from '../styles/body.module.css';
 import { projImage, projHeading, projLink, projExplanation } from '../styles/project.module.css'
