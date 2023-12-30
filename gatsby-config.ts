@@ -15,9 +15,25 @@ const config: GatsbyConfig = {
       // The unique name for each instance
       name: `pages`,
       // Path to the directory
-      path: `${__dirname}/src/pages/`,
+      path: `${__dirname}/src/projectmd/`,
     },
-  }],
+  },
+  'gatsby-transformer-remark',
+],
+
+}
+
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/projectmd`,
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
 }
 
 export default config

@@ -8,11 +8,24 @@ import {
 import {
     book
 } from '../styles/books.module.css'
-
+interface blogProps {
+    blogTitle: string;
+    blogDate: Date;
+    blogDesc: string;
+}
+const Blog = ({blogTitle, blogDesc}) => {
+    return (
+        <div>
+            <h2>{blogTitle}</h2>
+            <p>{blogDesc}</p>
+        </div>
+    )
+}
 const BlogPage = () => {
     return (
         <div className={body}>
             <Layout pageTitle="Blog"/>
+            <Blog blogTitle="My first blog" blogDesc="I have to start..."/>
             <Social/>
         </div>
     )

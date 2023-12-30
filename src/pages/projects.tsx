@@ -7,6 +7,7 @@ import { body } from '../styles/body.module.css';
 import { projImage, projHeading, projLink, projExplanation } from '../styles/project.module.css'
 import surveyMap from "../../public/static/surveyMap.png"
 import td390 from '../../public/static/td390.jpg'
+import json from '../../public/static/json.jpg'
 interface projectProps {
     projectTitle: string;
     imgPath: string;
@@ -65,7 +66,7 @@ const ProjectsPage = () => {
         <div className={body}>
             <Layout pageTitle="Projects" />
             <li className={projLink}>
-                <Project projectTitle='Converting Unstructured Data to JSON using LLMs' imgPath={td390} projectDesc='Extracting useful information from unstructured data such as notes, transcripts into JSON file with guaranteed validation using Guardrails AI...' markDownPath='../projectsmd/sample.md' />
+                <Project projectTitle='Converting Unstructured Data to JSON using LLMs' imgPath={json} projectDesc='Extracting useful information from unstructured data such as notes, transcripts into JSON file with guaranteed validation using Guardrails AI...' markDownPath='../projectsmd/sample.md' />
                 <Project projectTitle='Modernizing Land Records' imgPath={surveyMap} projectDesc='In collaboration with Government of Maharashtra & Google Research to solve land dispute problmes with technology... ' markDownPath='/' />
                 <Project projectTitle='Analysing Water Stress' imgPath={td390} projectDesc='In colloboration with Aroehan(NGO) and TDSL(IIT Bombay) to analyse water stress in three tribal habitations...' markDownPath='/' />
             </li>
