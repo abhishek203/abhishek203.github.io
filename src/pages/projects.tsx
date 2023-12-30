@@ -5,9 +5,8 @@ import Social from '../components/social';
 
 import { body } from '../styles/body.module.css';
 import { projImage, projHeading, projLink, projExplanation } from '../styles/project.module.css'
-import surveyMap from "../../public/static/surveyMap.jpg"
+import surveyMap from "../../public/static/surveyMap.png"
 import td390 from '../../public/static/td390.jpg'
-import sample from '../../public/static/sample2.md'
 interface projectProps {
     projectTitle: string;
     imgPath: string;
@@ -15,33 +14,33 @@ interface projectProps {
     markDownPath: URL | RequestInfo;
 }
 
-const loadMarkdown:React.FC  =  () => {
-    const [markdownContent, setMarkdownContent] = React.useState('');
+// const loadMarkdown:React.FC  =  () => {
+//     const [markdownContent, setMarkdownContent] = React.useState('');
 
-  React.useEffect(() => {
-    const fetchMarkdown = async () => {
-      try {
-        const response = await fetch(sample); // Replace with the path to your markdown file
-        const text = await response.text();
-        setMarkdownContent(text);
-      } catch (error) {
-        console.error('Error fetching markdown:', error);
-      }
-    };
+//   React.useEffect(() => {
+//     const fetchMarkdown = async () => {
+//       try {
+//         const response = await fetch(sample); // Replace with the path to your markdown file
+//         const text = await response.text();
+//         setMarkdownContent(text);
+//       } catch (error) {
+//         console.error('Error fetching markdown:', error);
+//       }
+//     };
 
-    fetchMarkdown();
-  }, []);
-    return (
-        <div>
-            {markdownContent && (
-                <div>
-                    <h2>Markdown Content:</h2>
-                    {/* <ReactMarkdown>{markdownContent}</ReactMarkdown> */}
-                </div>
-            )}
-        </div>
-    )
-};
+//     fetchMarkdown();
+//   }, []);
+//     return (
+//         <div>
+//             {markdownContent && (
+//                 <div>
+//                     <h2>Markdown Content:</h2>
+//                     {/* <ReactMarkdown>{markdownContent}</ReactMarkdown> */}
+//                 </div>
+//             )}
+//         </div>
+//     )
+// };
 const Project: React.FC<projectProps> = ({ projectTitle, imgPath, projectDesc, markDownPath }) => {
     
     return (
